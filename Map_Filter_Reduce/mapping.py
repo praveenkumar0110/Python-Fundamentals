@@ -62,3 +62,19 @@ resukt = list(map(lenthofstring,name))
 print(resukt)  # Output: [14, 11, 18]
 
 
+pk = {
+    "name": "pk",
+    "age": 23,
+    "city": "chennai",
+    "job": "software engineer",
+    "country": "india"
+}
+pk = dict(
+    map(
+        lambda item: (item[0], item[1].capitalize() if isinstance(item[1], str) else item[1]),
+        pk.items()
+    )
+)
+
+print(pk)
+# Output: {'name': 'Pk', 'age': 23, 'city': 'Chennai', 'job': 'Software engineer', 'country': 'India'}
