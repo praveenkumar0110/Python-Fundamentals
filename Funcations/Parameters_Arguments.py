@@ -53,3 +53,11 @@ Evlo arguments venumnaalum pass pannalaam
 
 
 
+def pk(**kwargs):
+    print("name",kwargs.get("name"))
+    print("age",kwargs.get("age"))
+
+pk(name ="paveen",age = "age")
+
+
+
