@@ -10,6 +10,8 @@ s = Student("Praveen", 23)
 s.show()
 
 
+
+# chnage name using class and object ---------------important
 class std:
      name ="praveen "
      age = 23
@@ -29,6 +31,12 @@ print(pk1.name)
 pk2 = std()
 pk2.name = "kumar"
 print(pk2.name)
+
+'''
+Changing value using object creates an instance variable without affecting the class variable. 
+'''
+
+# chnage name using class and object
 
 # method of class :
     
