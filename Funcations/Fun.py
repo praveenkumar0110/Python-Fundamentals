@@ -35,7 +35,7 @@ def function_name(parameters):
 # return (optional)
 
 '''
-2️⃣ User-Defined Functions
+2 User-Defined Functions
 
 👉 Neenga neeye create pannradhu
 
