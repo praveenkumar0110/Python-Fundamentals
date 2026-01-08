@@ -13,24 +13,29 @@ s.show()
 
 # chnage name using class and object ---------------important
 class std:
-     name ="praveen "
-     age = 23
-     city = "chennai"
-     
-     def namee():
-         print("name is",name)
-     def agee():
-         print("age" ,age)
-    
-     def cityy():
-        print("cityy",age)
+    name = "praveen"
+    age = 23
+    city = "chennai"
+
+    def namee(self):
+        print("name is", self.name)
+
+    def agee(self):
+        print("age is", self.age)
+
+    def cityy(self):
+        print("city is", self.city)
+
 
 pk1 = std()
-print(pk1.name)
+print(pk1.name)      # praveen
 
 pk2 = std()
 pk2.name = "kumar"
-print(pk2.name)
+print(pk2.name)      # kumar
+
+pk3 = std()
+pk3.namee()          # praveen
 
 '''
 Changing value using object creates an instance variable without affecting the class variable. 
