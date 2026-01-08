@@ -10,7 +10,25 @@ s = Student("Praveen", 23)
 s.show()
 
 
+class std:
+     name ="praveen "
+     age = 23
+     city = "chennai"
+     
+     def namee():
+         print("name is",name)
+     def agee():
+         print("age" ,age)
+    
+     def cityy():
+        print("cityy",age)
 
+pk1 = std()
+print(pk1.name)
+
+pk2 = std()
+pk2.name = "kumar"
+print(pk2.name)
 
 # method of class :
     
