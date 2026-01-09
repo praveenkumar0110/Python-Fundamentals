@@ -106,6 +106,7 @@ with open("data.txt","r") as f :
 #STEP 9: New file create panni save pannradhu
 with open("data2.txt","w") as f:
     f.write("myfolder\n")
+    f.write("hello  welcome to python world")
 
 
 # folder create
