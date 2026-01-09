@@ -1,5 +1,7 @@
+#Object create aagumbodhu automatically call aagura special method
 '''
 self is required to access object variables inside class methods; otherwise Python treats them as local variables.
+
 '''
 
 #__init__ = constructor method 
