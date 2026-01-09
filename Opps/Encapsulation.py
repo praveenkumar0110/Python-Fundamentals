@@ -31,6 +31,3 @@ class Student:
 s1 = Student(20)          # object created
 s1.set_age(100)           # age changed
 print(s1.get_age())  
-
-
-
