@@ -1,0 +1,44 @@
+problem-solving advice
+
+
+1️⃣ Problem paatha udane code yosikka koodaadhu ❌
+
+Most people panna mistake:
+
+❌ “for loop pottaa podhuma?”
+❌ “if else enga use pannalaam?”
+
+✔ Instead, paper-mindset:
+
+Ask these 5 questions 👇----------------------------
+
+Input enna?
+
+Output enna venum?
+
+Data type enna? (list / dict / number)
+
+Repeat aagudhaa? → loop
+
+Decision edukkanumaa? → if / else
+
+
+
+
+
+
+2 Example – Logic build pannalaam 🔥
+Problem:
+
+List-la irukkura even numbers count pannanum
+
+❌ Direct code yosikkaadha
+✔ Mind-la yosikka:
+
+Data = list
+
+One by one check panna vendum → loop
+
+Even ah illayaa → condition
+
+Count store pannanum → variable
