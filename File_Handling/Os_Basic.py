@@ -127,3 +127,29 @@ csv file handling use pandas lib
 
 '''
  
+
+# 🔟 CSV Files
+# import csv
+
+
+# Topics:
+
+# csv.reader
+
+# csv.writer
+
+# DictReader / DictWriter
+
+
+
+# 🔹 1️⃣1️⃣ JSON Files
+# import json
+
+
+# Topics:
+
+# json.load()
+
+# json.dump()
+
+# API data storage

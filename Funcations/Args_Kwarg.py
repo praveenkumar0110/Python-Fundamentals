@@ -1,5 +1,5 @@
 '''
-ethod 1: Using *args (many values)----------------------------important Note
+Method 1: Using *args (many values)----------------------------important Note
 📌 Use case
 
 👉 You don’t know how many numbers the user will pass.

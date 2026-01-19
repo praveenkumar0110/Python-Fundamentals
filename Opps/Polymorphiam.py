@@ -47,8 +47,8 @@ print(add(5, 3))   # Output: 8
 #Example 2: Multiple Default Arguments
 def na(name,mess="welcome"):
     print(name,mess)
-na("pk")
-na("pk","hi")
+na("pk")            #output pk welcome
+na("pk","hi")       #output pk hi
 
 
 
