@@ -9,9 +9,6 @@ os.path.isdir("myfolder")    # Folder ah?
 
 import os
 
-
-import os
-
 path= "test.txt"
 
 if os.path.exists(path):
@@ -117,9 +114,9 @@ print("Folder created")
 
 
 '''
-most importnat
+most important
 | Task           | Method          |
-| -------------- | --------------- |
+| -------------- | --------------- | 
 | Read full file | `read()`        |
 | Line by line   | `for line in f` |
 | Write          | `"w"`           |
@@ -127,11 +124,6 @@ most importnat
 | Replace        | `replace()`     |
 | Clean data     | `strip()`       |
 csv file handling use pandas lib
+
 '''
-
-
-
-
-
-
-
+ 

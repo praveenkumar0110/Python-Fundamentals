@@ -18,9 +18,10 @@ db = client["ICD10"]
 collection = db["Categories"]
 
 #FIRST DATA READ (MOST IMPORTANT 🔥)
-# for doc in collection.find():
-#     print(doc)
-    
+
+for doc in collection.find():
+    print(doc)
+
 # for doc in collection.find():
 #       print(
 #         doc["_id"],
@@ -43,8 +44,8 @@ collection = db["Categories"]
 # for doc in collection.find():
 #     for code in doc["codes_list"]:
 #         print(code ["code"], code["description"])
-        
-        
+
+
 #Safe + Clean version (BEST PRACTICE 💯)
 
 # for doc in collection.find():
@@ -52,6 +53,7 @@ collection = db["Categories"]
 #         pk = code.get("code","N/A")
 #         desc = code.get("description","N/A")
 #         print(pk, desc)
+
 
 
 doc = collection.find_one(
