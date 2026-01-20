@@ -72,3 +72,28 @@ def add_item(lst):
 
 nums = add_item([1, 2, 3])
 print(nums)
+
+
+
+
+'''
+EASY 5-STEP DEBUGGING METHOD
+🔹 STEP 1: Expected vs Actual compare pannu
+
+🔹 STEP 2: Guess pannadha ❌, Observe pannu ✅
+
+❌ “Maybe loop problem irukkum”
+✅ “Loop-kulla enna nadakkudhu nu paapom”
+
+🔹 STEP 3: ONE place-la stop pannu (Breakpoint / print)
+
+Think:
+Indha line-varaikkum correct-aa varudha?”
+
+
+🔹 STEP 4: ONE variable mattum paathu
+
+❌ ellathayum paaka try pannadha
+✅ one variable choose pannu 
+
+'''
