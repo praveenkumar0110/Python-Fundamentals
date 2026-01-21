@@ -4,6 +4,11 @@ Inner loop  → columns
 
 '''
 
+'''
+star start na 1start (1,n)
+start from 1 to 5 (i+1)
+'''
+
 
 n = 5
 for i in range(n):
@@ -23,7 +28,7 @@ for i in range(n):
 
 
 n = 5
-for i in range(1, n+1):
+for i in range(n):
     for j in range(i):
         print("*", end=" ")
     print()
