@@ -116,5 +116,4 @@ Token IDs: [8727, 318, 279, 5758, 268]
 Encoded: {'input_ids': [8727, 318, 279, 5758, 268], 'attention_mask': [1, 1, 1, 1, 1]}
 Decoded text: who is praveen
 
-
 '''
