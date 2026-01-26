@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AI Travel Planner</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins',sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+        padding:40px;
+        color:#fff;
+    }
+
+    .wrapper{
+        max-width:1100px;
+        margin:auto;
+    }
+
+    .title{
+        text-align:center;
+        margin-bottom:40px;
+        animation:fadeDown 1s ease;
+    }
+
+    .title h1{
+        font-size:42px;
+        font-weight:600;
+        letter-spacing:2px;
+        background: linear-gradient(90deg,#00c6ff,#0072ff);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        border-bottom:3px solid rgba(255,255,255,0.3);
+        display:inline-block;
+        padding-bottom:10px;
+    }
+
+    .card{
+        backdrop-filter: blur(18px);
+        background: rgba(255,255,255,0.08);
+        border-radius:16px;
+        padding:30px 35px;
+        margin-bottom:30px;
+        box-shadow:0 15px 35px rgba(0,0,0,0.4);
+        border:1px solid rgba(255,255,255,0.15);
+        animation:fadeUp 1s ease;
+        white-space:pre-line;
+        line-height:1.9;
+        font-size:15px;
+    }
+
+    .card h2{
+        margin-bottom:15px;
+        font-weight:600;
+        font-size:20px;
+        color:#00c6ff;
+        border-left:5px solid #00c6ff;
+        padding-left:12px;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        margin-top:15px;
+        font-size:14px;
+    }
+
+    th, td{
+        border:1px solid rgba(255,255,255,0.2);
+        padding:12px;
+        text-align:left;
+    }
+
+    th{
+        background:rgba(0,198,255,0.2);
+        color:#00e0ff;
+    }
+
+    @keyframes fadeUp{
+        from{opacity:0; transform:translateY(30px);}
+        to{opacity:1; transform:translateY(0);}
+    }
+
+    @keyframes fadeDown{
+        from{opacity:0; transform:translateY(-30px);}
+        to{opacity:1; transform:translateY(0);}
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="title">
+        <h1>AI TRAVEL PLANNER</h1>
+        <div>(LangChain + LangGraph + Tool Calling + RAG + Playwright)</div>
+    </div>
+
+    <div class="card">
+<h2>System Flow</h2>
+User
+ ↓
+LLM (Planner Brain)
+ ↓
+LangGraph (Decision Flow)
+ ├─ Tool: Places API
+ ├─ Tool: Weather API
+ ├─ Tool: Browser (Playwright) travell website 
+ ├─ RAG (Travel knowledge)
+ ↓
+Final Travel Plan
+    </div>
+
+    <div class="card">
+<h2>Technologies Used</h2>
+1 - OpenAI (via LangChain)
+---------------------------------------------
+2 - Tool Calling 
+
+Google Places API
+
+OpenWeather API
+
+Playwright  for website  travel
+----------------------------------------------
+3- RAG (Retrieval Augmented Generation) 
+
+Used for:
+
+Local travel knowledge
+    </div>
+
+    <div class="card">
+<h2>Input</h2>
+From: Chennai
+To: Goa
+Date: Feb 10
+Budget: ₹15,000
+    </div>
+
+    <div class="card">
+<h2>Output</h2>
+Travel Plan: Chennai → Goa (₹15,000)
+
+Day 1:
+Arrive Goa, visit Miramar Beach
+Stay at budget hostel near Panaji
+
+Day 2:
+Visit Baga & Calangute beaches
+Use local bus
+
+Weather: Clear, 29°C
+Total cost within budget
+    </div>
+
+    <div class="card">
+<h2>My  Understanding</h2>
+<table>
+<tr>
+<th>Component</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>LangChain</td>
+<td>OpenAI</td>
+</tr>
+<tr>
+<td>LangGraph</td>
+<td>If flight not available → ask new date → retry (parell works)</td>
+</tr>
+<tr>
+<td>faiss-cpu</td>
+<td>Memory (Vector DB)</td>
+</tr>
+<tr>
+<td>playwright</td>
+<td>Browser automation</td>
+</tr>
+</table>
+    </div>
+
+</div>
+
+</body>
+</html>
