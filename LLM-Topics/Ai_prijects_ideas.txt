@@ -1,0 +1,70 @@
+AI TRAVEL PLANNER
+(LangChain + LangGraph + Tool Calling + RAG + Playwright)
+
+
+User
+ ↓
+LLM (Planner Brain)
+ ↓
+LangGraph (Decision Flow)
+ ├─ Tool: Places API
+ ├─ Tool: Weather API
+ ├─ Tool: Browser (Playwright) travell website 
+ ├─ RAG (Travel knowledge)
+ ↓
+Final Travel Plan
+
+
+1 - OpenAI (via LangChain)
+---------------------------------------------
+2 - Tool Calling 
+
+Google Places API
+
+OpenWeather API
+
+Playwright  for website  travel
+----------------------------------------------
+
+3- RAG (Retrieval Augmented Generation) 
+
+Used for:
+
+Local travel knowledge
+
+------------------------------------------
+
+how its works
+  
+input:
+
+From: Chennai
+To: Goa
+Date: Feb 10
+Budget: ₹15,000
+
+--------------------------------------------
+output 
+
+Travel Plan: Chennai → Goa (₹15,000)
+
+Day 1:
+Arrive Goa, visit Miramar Beach
+Stay at budget hostel near Panaji
+
+Day 2:
+Visit Baga & Calangute beaches
+Use local bus
+
+Weather: Clear, 29°C
+Total cost within budget
+
+------------------------------
+
+
+for my understand
+
+LangChain = OpenAI
+LangGraph = If flight not available → ask new date → retry (parell works)
+faiss-cpu = Memory (Vector DB)
+playwright= Browser automation
