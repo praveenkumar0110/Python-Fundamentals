@@ -34,6 +34,7 @@ def function_name(parameters):
 
 # return (optional)
 
+
 '''
 2 User-Defined Functions
 
@@ -42,3 +43,5 @@ def function_name(parameters):
 def square(x):
     return x * x
 '''
+
+names = ["praveen","kumar","naveen "]
