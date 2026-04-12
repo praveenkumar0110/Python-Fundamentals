@@ -1,3 +1,5 @@
-from name import fun
+from Fun import names
+from Try_Exepts import pk
 
-print(name)
+print(names) 
+print(pk())
