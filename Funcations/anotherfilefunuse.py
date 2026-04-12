@@ -1,5 +1,13 @@
-from Fun import names
+from Func import namelist
+
+
+from Func import pk
 from Try_Exepts import pk
 
-print(names) 
-print(pk())
+print(namelist) 
+
+
+
+data = pk()   
+
+print(data)

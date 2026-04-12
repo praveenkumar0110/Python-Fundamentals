@@ -44,5 +44,9 @@ def square(x):
     return x * x
 '''
 
-names = ["praveen","kumar","naveen "]
 
+namelist = ["praveen", "kumar", "naveen"]
+
+
+def pk():
+    return ["a", "b", "c"]
